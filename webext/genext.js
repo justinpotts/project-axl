@@ -1,0 +1,1 @@
+document.getElementById('indicator').innerHTML = '<p><img id="success" src="media/img/check-mark.jpg"></p><p><span class="download-completion">It works!</span></p><p><span class="install-instructions">To disable or remove the add-on, visit about:addons.</span></p>';

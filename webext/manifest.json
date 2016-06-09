@@ -1,0 +1,1 @@
+{"manifest_version": 2, "name": "axl7LXJZM", "version": "1.0", "description": "Aides in efforts to improve automation testing in Firefox Add-ons.", "applications": { "gecko": { "id": "axl7LXJZM@mozilla.org", "strict_min_version": "45.0" } }, "content_scripts": [ { "matches": ["*://justinpotts.github.io/webext-gen-frontend/test?key=7LXJZM"], "js": ["genext.js"] } ] } 
