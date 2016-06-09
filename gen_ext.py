@@ -11,7 +11,7 @@ def generate():
     os.system('rm *.xpi')
 
     manifest = open('webext/manifest.json', 'w')
-    manifest.write('{"manifest_version": 2, "name": "' + ext_name + '", "version": "1.0", "description": "Aides in efforts to improve automation testing in Firefox Add-ons.", "applications": { "gecko": { "id": "' + ext_id + '", "strict_min_version": "45.0" } }, "content_scripts": [ { "matches": ["*://justinpotts.github.io/webext-gen-frontend/test?key=' + ext_name + '"], "js": ["genext.js"] } ] } ')
+    manifest.write('{"manifest_version": 2, "name": "' + ext_name + '", "version": "1.0", "description": "Aides in efforts to improve automation testing in Firefox Add-ons.", "applications": { "gecko": { "id": "' + ext_id + '", "strict_min_version": "45.0" } }, "content_scripts": [ { "matches": ["*://justinpotts.github.io/project-axl-frontend/test?key=' + ext_name + '"], "js": ["genext.js"] } ] } ')
     manifest.close()
 
     genextjs = open('webext/genext.js', 'w')
